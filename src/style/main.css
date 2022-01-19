@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   line-height: 1em;
-  margin-top: 10%;
+  height: 100vh;
 }
 .profile_image {
   border-radius: 50%;
@@ -30,3 +30,6 @@ body {
   color: #148b7b;
 }
 
+.project_list {
+  text-align: center;
+}
