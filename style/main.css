@@ -4,6 +4,7 @@
 body {
   background: whitesmoke;
   font-family: "Source Sans Pro", sans-serif;
+  overflow-y: hidden;
 }
 .profile {
   display: flex;
