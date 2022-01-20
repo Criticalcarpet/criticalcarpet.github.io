@@ -1,13 +1,13 @@
 @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
 
+
 body {
-  background: #f2f2f2;
+  background: whitesmoke;
   font-family: "Source Sans Pro", sans-serif;
 }
 .profile {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   line-height: 1em;
@@ -15,7 +15,6 @@ body {
 }
 .profile_image {
   border-radius: 50%;
-  overflow: hidden;
   object-fit: cover;
   width: 10em;
   height: 10em;
@@ -32,4 +31,34 @@ body {
 
 .project_list {
   text-align: center;
+  margin-bottom: 5rem;
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.logos {
+  width: 100px;
+}
+
+.project_item {
+  border-bottom: 1px dashed #f0f0f0;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.project {
+  display: flex;
+  text-align: left;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
 }
