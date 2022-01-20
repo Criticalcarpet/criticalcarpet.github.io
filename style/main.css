@@ -28,37 +28,3 @@ body {
 .github_link {
   color: #148b7b;
 }
-
-.project_list {
-  text-align: center;
-  margin-bottom: 5rem;
-  padding-top: 0px;
-  padding-right: 20px;
-  padding-bottom: 0px;
-  padding-left: 20px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.logos {
-  width: 100px;
-}
-
-.project_item {
-  border-bottom: 1px dashed #f0f0f0;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-}
-
-.project {
-  display: flex;
-  text-align: left;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
