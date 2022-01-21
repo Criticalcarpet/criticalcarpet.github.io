@@ -27,5 +27,18 @@ body {
   margin-top: 0em;
 }
 .github_link {
-  color: #148b7b;
+  color: #27c5da;
+}
+
+
+/* Text selection */
+
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: #75bcdd;
+}
+
+::selection {
+  color: black;
+  background: #75bcdd;
 }
