@@ -17,5 +17,7 @@ window.addEventListener("keyup", (event) => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementsByTagName('main')[0].style.display = 'block';
+    setTimeout(() => {
+        document.getElementById('append-head').style.display = 'block';
+    }, 1000);
 });
