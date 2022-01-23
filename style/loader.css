@@ -9,6 +9,7 @@
   padding: 0;
   background: #036;
   overflow: hidden;
+  display: none;
 }
 /* nyan cat! */
 #nyan-cat {

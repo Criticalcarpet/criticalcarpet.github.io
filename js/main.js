@@ -1,3 +1,4 @@
+document.getElementById('whole-content').style.display = 'block';
 console.log('I don\'t know why you are here');
 window.addEventListener("keyup", (event) => {
         switch (event.code) {
