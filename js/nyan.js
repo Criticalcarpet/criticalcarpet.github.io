@@ -13,3 +13,8 @@ function cycleFrames (_nyanCat, _currentFrame) {
 		cycleFrames(nyanCat, currentFrame)
 	}, 70)
 })()
+
+/*
+Credits - https://github.com/cristurm/nyan-cat (main)
+Credits - https://github.com/rdeville/nyan-cat (support)
+*/
