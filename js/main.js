@@ -14,3 +14,8 @@ window.addEventListener("keyup", (event) => {
                 }, 1000);
         }
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementsByTagName('main')[0].style.display = 'block';
+});

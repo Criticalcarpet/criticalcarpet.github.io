@@ -7,20 +7,23 @@
     <meta name="description" content="Criticalcarpet's Portfolio" />
     <meta name="keywords" content="Portfolio, Criticalcarpet, Web-developer" />
     <meta name="author" content="Criticalcarpet" />
-        <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://criticalcarpet.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Criticalcarpet">
-    <meta property="og:description" content="Criticalcarpet's portfolio">
-    <meta property="og:image" content="https://github.com/Criticalcarpet.png">
-    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://criticalcarpet.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Criticalcarpet" />
+    <meta property="og:description" content="Criticalcarpet's portfolio" />
+    <meta property="og:image" content="https://github.com/Criticalcarpet.png" />
+
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="criticalcarpet.github.io">
-    <meta property="twitter:url" content="https://criticalcarpet.github.io/">
-    <meta name="twitter:title" content="Criticalcarpet">
-    <meta name="twitter:description" content="Criticalcarpet's portfolio">
-    <meta name="twitter:image" content="https://github.com/Criticalcarpet.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="criticalcarpet.github.io" />
+    <meta property="twitter:url" content="https://criticalcarpet.github.io/" />
+    <meta name="twitter:title" content="Criticalcarpet" />
+    <meta name="twitter:description" content="Criticalcarpet's portfolio" />
+    <meta
+      name="twitter:image"
+      content="https://github.com/Criticalcarpet.png"
+    />
     <title>Criticalcarpet</title>
     <link
       rel="shortcut icon"
@@ -31,29 +34,52 @@
     <script src="./js/main.js" type="module"></script>
     <script src="./js/github.js" type="module"></script>
     <script src="https://unpkg.com/zooming" type="module"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@hyperlinks-js/hyperlinks/dist/index.bundle.js"
+      type="module"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
     <script type="module">
-      new Zooming().listen('img')
+      new Zooming().listen("img");
+      Hyperlinks.Init("mixed");
     </script>
   </head>
-  <body id="append-head">
-    <main>
-      <section class="profile" >
+  <body>
+    <noscript>
+      <div class="noscript">
+        <p>
+          <strong>
+            <i class="fas fa-exclamation-triangle"></i>
+            JavaScript is disabled
+          </strong>
+        </p>
+        <p>Please enable JavaScript to view the content of this page.</p>
+      </div>
+    </noscript>
+    <main id="append-head">
+      <i class="fas fa-info-circle info_icon"></i>
+      <section class="profile">
         <img
-          src="https://github.com/Criticalcarpet.png"
-          alt="logo"
-          class="profile_image img-zoomable"
+          src="//github.com/Criticalcarpet.png"
+          alt="profile-photo"
+          class="profile_photo img-zoomable"
           draggable="false"
         />
-        <h1>Criticalcarpet</h1>
-        <blockquote class="profile_description">
-          A Web developer who creates things !!!
+        <h1 class="profile_name">Criticalcarpet</h1>
+        <blockquote class="profile_desc">
+          A Web-developer creating things which sometimes work !
         </blockquote>
         <a
           href="https://github.com/Criticalcarpet/"
-          class="github_link"
+          class="hyperlinks github_link"
           rel="noreferrer noopener"
-          target="_blank"
           draggable="false"
+          target="_blank"
           >Github</a
         >
       </section>
