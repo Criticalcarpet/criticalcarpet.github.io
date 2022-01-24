@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bck: #3f3f3f;
+  --font: rgb(241, 241, 241);
+  --glitch1: hsl(214, 50%, 52%);
+  --glitch2: hsl(9, 50%, 52%);
+  --glitch3: hsl(61, 50%, 52%);
+}
+
+body {
+  background-color: #313942;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  color: #e7ebf2;
+  font-size: 20.5rem;
+  letter-spacing: 0.1em;
+  margin: 0.025em 0;
+  text-shadow: 0.05em 0.05em 0 rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  animation: glitch 0.5s infinite;
+}
+@media (max-width: 30rem) {
+  h1 {
+    font-size: 8.5rem;
+  }
+}
+h1 > span {
+  -webkit-animation: spooky 2s alternate infinite linear;
+          animation: spooky 2s alternate infinite linear;
+  color: #528cce;
+  display: inline-block;
+}
+
+h2 {
+  color: #e7ebf2;
+  margin-bottom: 0.4em;
+}
+
+p {
+  color: #ccc;
+  margin-top: 0;
+}
+
+.sub-grey {
+  color: #ccc;
+}
+
+/* Glitch start */
+#txt::after {
+  transform: translateY(10px);
+  animation: line 0.4s infinite;
+}
+#txt::before {
+  animation: lineTwo 0.9s infinite;
+}
+#txt {
+  transform: translateX(5px, 3px);
+  animation: move 0.8s infinite;
+}
+/* Glitch end */
+
+@-webkit-keyframes spooky {
+  from {
+    transform: translatey(0.15em) scaley(0.95);
+  }
+  to {
+    transform: translatey(-0.15em);
+  }
+}
+
+@keyframes spooky {
+  from {
+    transform: translatey(0.15em) scaley(0.95);
+  }
+  to {
+    transform: translatey(-0.15em);
+  }
+}
+
+
+
+
+@keyframes glitch {
+  0% {
+    text-shadow: 6px 4px var(--glitch2), 5px -5px var(--glitch1),
+      2px -4px var(--glitch3);
+  }
+  1% {
+    text-shadow: -2px 0px var(--glitch2), -5px 5px var(--glitch1),
+      2px 4px var(--glitch3);
+  }
+  19% {
+    text-shadow: -2px 0px var(--glitch2), -5px 5px var(--glitch1),
+      2px 4px var(--glitch3);
+  }
+  20% {
+    text-shadow: -4px 4px var(--glitch2), 3px 3px var(--glitch1),
+      -2px 4px var(--glitch3);
+  }
+  39% {
+    text-shadow: -4px 4px var(--glitch2), 3px 3px var(--glitch1),
+      -2px 4px var(--glitch3);
+  }
+  40% {
+    text-shadow: 1px -1px var(--glitch2), -1px 5px var(--glitch1),
+      6px -3px var(--glitch3);
+  }
+  59% {
+    text-shadow: 1px -1px var(--glitch2), -1px 5px var(--glitch1),
+      6px -3px var(--glitch3);
+  }
+  60% {
+    text-shadow: -5px -4px var(--glitch2), -4px 4px var(--glitch1),
+      -3px 3px var(--glitch3);
+  }
+  79% {
+    text-shadow: -5px -4px var(--glitch2), -4px 4px var(--glitch1),
+      -3px 3px var(--glitch3);
+  }
+  80% {
+    text-shadow: -4px 4px var(--glitch2), 3px 3px var(--glitch1),
+      -2px 4px var(--glitch3);
+  }
+  99% {
+    text-shadow: -4px 4px var(--glitch2), 3px 3px var(--glitch1),
+      -2px 4px var(--glitch3);
+  }
+}
+
+@keyframes line {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-110px);
+  }
+}
+
+@keyframes lineTwo {
+  0% {
+    transform: translateY(10px);
+  }
+  48% {
+    transform: translateY(-110px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(-110px);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(5px, 3px);
+  }
+  25% {
+    transform: translate(-4px, 1px);
+  }
+  50% {
+    transform: translate(3px, -4px);
+  }
+  75% {
+    transform: translate(-3px, 4px);
+  }
+  99% {
+    transform: translate(5px, 3px);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
