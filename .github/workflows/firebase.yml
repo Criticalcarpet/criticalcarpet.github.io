@@ -1,0 +1,6 @@
+- name: Deploy site
+        uses: ./.github/actions/pipelines-firebase-hosting
+        with:
+          firebase-token: ${{ secrets.FIREBASE_TOKEN }}
+          resources-name: /
+          project-name: Criticalcarpet
