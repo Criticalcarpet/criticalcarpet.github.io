@@ -1,6 +1,16 @@
-- name: Deploy site
-        uses: ./.github/actions/pipelines-firebase-hosting
-        with:
-          firebase-token: ${{ secrets.FIREBASE_TOKEN }}
-          resources-name: /
-          project-name: Criticalcarpet
+name: Publish to NPMJS and GPR
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+        publish-to-npm-and-gpr:
+                runs-on: ubuntu-latest
+                steps:
+                        - uses: actions/checkout@master
+                        - uses: ./.github/actions/pipelines-firebase-hosting
+                          with:
+                                firebase-token: ${{ secrets.FIREBASE_TOKEN }}
+                                resources-name: /
+                                project-name: Criticalcarpet
