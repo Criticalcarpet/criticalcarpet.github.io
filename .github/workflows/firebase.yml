@@ -9,7 +9,7 @@ jobs:
                 runs-on: ubuntu-latest
                 steps:
                         - uses: actions/checkout@master
-                        - uses: ./.github/actions/pipelines-firebase-hosting
+                        - uses: danielmillan/pipelines-firebase-hosting@1.0.8
                           with:
                                 firebase-token: ${{ secrets.FIREBASE_TOKEN }}
                                 resources-name: /
