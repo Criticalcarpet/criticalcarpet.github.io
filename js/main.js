@@ -23,3 +23,5 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById('append-head').style.display = 'block';
     }, 2000);
 });
+
+document.addEventListener('contextmenu', event => event.preventDefault());
