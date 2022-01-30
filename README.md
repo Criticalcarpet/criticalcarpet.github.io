@@ -1,8 +1,7 @@
 # [Portfolio](https://criticalcarpet.web.app/)
 Hmmm...🤔  
   
-  
-  
+   
 > Branches :
 > - main => deployment(static)
 > - dev => development(static)
