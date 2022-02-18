@@ -65,4 +65,4 @@ node_modules/
 # dotenv environment variables file
 .env
 .dccache
-.package-lock.json
+package-lock.json
