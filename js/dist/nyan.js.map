@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../nyan.js"],
+  "sourcesContent": ["\r\nfunction cycleFrames (_nyanCat, _currentFrame) {\r\n\t_nyanCat.classList = []\r\n\t_nyanCat.classList.add(`frame${_currentFrame}`)\r\n}\r\n\r\n(function () {\r\n\tlet nyanCat = document.getElementById('nyan-cat')\r\n\tlet currentFrame = 1\r\n\r\n\tsetInterval(function () {\r\n\t\tcurrentFrame = (currentFrame % 6) + 1\r\n\t\tcycleFrames(nyanCat, currentFrame)\r\n\t}, 70)\r\n})()\r\n\r\n/*\r\nCredits - https://github.com/cristurm/nyan-cat (main)\r\nCredits - https://github.com/rdeville/nyan-cat (support)\r\n*/"],
+  "mappings": "MACA,WAAsB,EAAU,EAAe,CAC9C,EAAS,UAAY,GACrB,EAAS,UAAU,IAAI,QAAQ,KAGhC,AAAC,WAAY,CACZ,GAAI,GAAU,SAAS,eAAe,YAClC,EAAe,EAEnB,YAAY,UAAY,CACvB,EAAgB,EAAe,EAAK,EACpC,EAAY,EAAS,IACnB",
+  "names": []
+}

@@ -7,7 +7,7 @@
     "sweetalert2": "^11.4.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node build.config.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Criticalcarpet/portfolio/issues"
   },
-  "homepage": "https://github.com/Criticalcarpet/portfolio#readme"
+  "homepage": "https://github.com/Criticalcarpet/portfolio#readme",
+  "devDependencies": {
+    "esbuild": "^0.14.22"
+  }
 }
