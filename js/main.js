@@ -1,27 +1,27 @@
-document.getElementById('whole-content').style.display = 'block';
-console.log('I don\'t know why you are here');
-window.addEventListener("keyup", (event) => {
-        switch (event.code) {
-            case 'KeyG':
-                alert('Redirecting to the repo...\nClick OK to continue');
-                setTimeout(() => {
-                window.location.href = 'https://github.com/Criticalcarpet/criticalcarpet.github.io';
-                }, 1000);
-                break;
-            case 'KeyC':
-                alert('Redirecting to the github profile...\nClick OK to continue');
-                setTimeout(() => {
-                window.location.href = 'https://github.com/Criticalcarpet/';
-                }, 1000);
-        }
-});
+import Swal from "sweetalert2";
 
+document.getElementById("whole-content").style.display = "block";
+console.log("I don't know why you are here");
 
 document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(() => {
-        document.getElementById('whole-content').remove();
-        document.getElementById('append-head').style.display = 'block';
-    }, 2000);
+  setTimeout(() => {
+    document.getElementById("whole-content").remove();
+    document.getElementById("append-head").style.display = "block";
+  }, 2000);
 });
 
-document.addEventListener('contextmenu', event => event.preventDefault());
+document
+  .getElementById("help-tooltip")
+  .addEventListener("click", async () => {
+    let audio = new Audio("../static/public_audio_reeee.mp3");
+    audio.play();
+    Swal.fire({
+      title: "Help",
+      text: "This is a help text",
+      showCancelButton: false,
+      confirmButtonColor: "#3085d6",
+      allowEscapeKey: false,
+      allowOutsideClick: false,
+      confirmButtonText: "OK",
+    });
+  });

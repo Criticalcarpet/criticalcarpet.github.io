@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Hmmm...🤔",
+  "main": "index.js",
+  "dependencies": {
+    "sweetalert2": "^11.4.0"
+  },
+  "scripts": {
+    "build": "node build.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Criticalcarpet/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Criticalcarpet/portfolio/issues"
+  },
+  "homepage": "https://github.com/Criticalcarpet/portfolio#readme",
+  "devDependencies": {
+    "esbuild": "^0.14.22"
+  }
+}
