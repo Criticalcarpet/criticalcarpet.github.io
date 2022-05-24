@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../404.js"],
-  "sourcesContent": ["document.getElementById('keys').addEventListener('keypress', () => {\r\n    document.location.href = '/'\r\n});"],
-  "mappings": "MAAA,SAAS,eAAe,QAAQ,iBAAiB,WAAY,IAAM,CAC/D,SAAS,SAAS,KAAO",
-  "names": []
-}
