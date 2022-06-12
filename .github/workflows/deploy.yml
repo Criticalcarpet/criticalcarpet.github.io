@@ -32,9 +32,10 @@ jobs:
       - run: |
           npm install 
           .\build.ps1
-          git add .
           git config --global user.email "github@example.com"
           git config --global user.name "Github Bot"
+          git checkout -b main
+          git add .
           git commit -m "Web Deployement"
           git show-ref
           git status
