@@ -1,5 +1,8 @@
 import Swal from "sweetalert2";
+import 'sweetalert2/dist/sweetalert2.min.css';
+import publicAudio from '../public/ree.mp3' 
 
+let audio = new Audio(publicAudio);
 document.getElementById("whole-content").style.display = "block";
 console.log("I don't know why you are here");
 
@@ -13,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
 document
   .getElementById("help-tooltip")
   .addEventListener("click", async () => {
-    let audio = new Audio("../static/public_audio_reeee.mp3");
     audio.play();
     Swal.fire({
       title: "Help",

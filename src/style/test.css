@@ -1,0 +1,32 @@
+@font-face {
+  font-family: Minecraft;
+  src: url("https://minecraft.fandom.com/media/hydra/fonts/minecraft.ttf")
+      format("truetype"),
+    url("https://minecraft.fandom.com/media/hydra/fonts/minecraft.woff")
+      format("woff");
+}
+* {
+  font-family: Minecraft;
+}
+
+.minecraft-achievement-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 5px #ccc;
+  padding: 20px;
+  font-size: 16px;
+  text-shadow: 1px 1px 1px #ccc;
+}
+
+.minecraft-achievement-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
