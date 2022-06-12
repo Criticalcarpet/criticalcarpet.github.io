@@ -32,9 +32,13 @@ jobs:
       - run: |
           npm install 
           .\build.ps1
-          git clean  -d  -fx .
+          git add .
+          git commit -m "Web Deployement"
+          git status
+          git remote get-url --all origin
+          git push origin main
       
-      - name: Push to the repo
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with: 
-          branch: main
+      #- name: Push to the repo
+       # uses: stefanzweifel/git-auto-commit-action@v4
+       # with: 
+        #  branch: main
