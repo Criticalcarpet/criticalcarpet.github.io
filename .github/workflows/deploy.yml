@@ -40,7 +40,7 @@ jobs:
           git show-ref
           git status
           git remote get-url --all origin
-          git push origin main
+          git push origin main --force
       
       #- name: Push to the repo
        # uses: stefanzweifel/git-auto-commit-action@v4
