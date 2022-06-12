@@ -33,7 +33,10 @@ jobs:
           npm install 
           .\build.ps1
           git add .
+          git config --global user.email "github@example.com"
+          git config --global user.name "Github Bot"
           git commit -m "Web Deployement"
+          git show-ref
           git status
           git remote get-url --all origin
           git push origin main
