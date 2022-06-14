@@ -51,7 +51,15 @@ const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const value = params.get("redirect");
 if (value === "https://github.com/Criticalcarpet/criticalcarpet.github.io") {
+  Swal.fire({
+    title: "Redirecting...",
+    showConfirmButton: false,
+    showCloseButton: false,
+    allowEscapeKey: false,
+    allowOutsideClick: false,
+  });
   if (!localStorage.getItem("codeReview")) {
+    localStorage.setItem("codeReview", "true");
     Swal.fire({
       html: `<div class="achievement-container">
             <div class="achievement-icon">
@@ -70,7 +78,7 @@ if (value === "https://github.com/Criticalcarpet/criticalcarpet.github.io") {
       allowOutsideClick: false,
       footer: "You will be redirected when you close this popup !!!",
     }).then(() => {
-        window.location.href = value;
+      window.location.href = value;
     });
   } else {
     window.location.href = value;
