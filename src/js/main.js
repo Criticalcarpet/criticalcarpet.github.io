@@ -31,3 +31,11 @@ document
       confirmButtonText: "OK",
     });
   });
+
+
+const periodChecker = localStorage.getItem('previousVisit');
+if (periodChecker === null) {
+alert('The website has been resetted by the admin. So you will be redoing the achievements')
+localStorage.clear();
+localStorage.setItem('previousVisit', 'true');
+}
