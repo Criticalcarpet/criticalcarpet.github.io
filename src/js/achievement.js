@@ -1,5 +1,6 @@
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
+import { start, stop } from "./confetti";
 
 const achievements = [
   {
@@ -16,6 +17,7 @@ const achievements = [
 
 const achievementsLauncher = (achievement) => {
   localStorage.setItem(achievement.id, "true");
+  start();stop()
   return Swal.fire({
     html: `<div class="achievement-container">
         <div class="achievement-icon">
@@ -42,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!localStorage.getItem("firstStep")) {
     setTimeout(() => {
       achievementsLauncher(achievements[0]);
-    }, 4000);
+    }, 3000);
   }
 });
 
@@ -51,6 +53,7 @@ const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const value = params.get("redirect");
 if (value === "https://github.com/Criticalcarpet/criticalcarpet.github.io") {
+  start();stop()
   Swal.fire({
     title: "Redirecting...",
     showConfirmButton: false,

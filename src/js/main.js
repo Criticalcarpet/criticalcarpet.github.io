@@ -13,13 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 2000);
 });
 
+
+const helpTemplate = `
+<div>This is a help text</div>
+`
 document
   .getElementById("help-tooltip")
   .addEventListener("click", async () => {
     audio.play();
     Swal.fire({
       title: "Help",
-      text: "This is a help text",
+      html: helpTemplate,
       showCancelButton: false,
       confirmButtonColor: "#3085d6",
       allowEscapeKey: false,
